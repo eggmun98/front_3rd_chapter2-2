@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { describe, expect, test } from 'vitest';
 import { act, fireEvent, render, renderHook, screen, within } from '@testing-library/react';
-import { CartPage } from '../../refactoring/components/CartPage';
-import { AdminPage } from "../../refactoring/components/AdminPage";
+import { CartPage } from '../../refactoring/components/Pages/Card/CartPage';
+import { AdminPage } from "../../refactoring/components/Pages/Admin/AdminPage";
 import { CartItem, Coupon, Product } from '../../types';
 import { useCart, useCoupons, useProducts } from "../../refactoring/hooks";
 import * as cartUtils from "../../refactoring/hooks/utils/cartUtils";

@@ -1,11 +1,12 @@
-import { CartPage } from './components/CartPage.tsx';
-import { AdminPage } from './components/AdminPage.tsx';
+
 import { Coupon, Product } from '../types.ts';
 import { useCoupons, useProducts } from "./hooks";
 import { initialProducts } from './contents/initialProducts.ts';
 import { initialCoupons } from './contents/initialCoupons.ts';
 import { useToggle } from './hooks/useToggle.ts';
 import Navigation from './components/Layouts/Navigation/Navigation.tsx';
+import { AdminPage } from './components/Pages/Admin/AdminPage.tsx';
+import { CartPage } from './components/Pages/Card/CartPage.tsx';
 
 const App = () => {
   const { products, updateProduct, addProduct } = useProducts(initialProducts);
